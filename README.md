@@ -1,8 +1,8 @@
 # NEO
 
-##Overview
+## Overview
 
-##Technology Stack and Resource uses
+## Technology Stack and Resource uses
 
 * Python 3.8+ <= 3.9.9
 * ActiveMQ version: 5.15.x + 
@@ -26,9 +26,9 @@
     HOMEBREW_NO_ENV_FILTERING=1 ACCEPT_EULA=Y brew install msodbcsql17 mssql-tools
     ```
 
-##Deployment
+## Deployment
 
-###Dev Deployment
+### Dev Deployment
 
 Build on command line or IDE
 ```
@@ -50,9 +50,9 @@ Windows
 $ cd plat-con-catman-adapter
 $ build.bat
 ```
-###Build Docker Image and Deploy
+### Build Docker Image and Deploy
 
-#####Development phase
+##### Development phase
 Install docker on your local and run below command to build the docker image and push to ACR. 
 
 $cd plat-con-catman-adapter
@@ -60,7 +60,7 @@ $cd plat-con-catman-adapter
 $docker buildx build --tag "<azure-resource-name-of-your-container-registry>.azurecr.io/<your-image-name>:v1" .
 
 
-#####Production phase
+##### Production phase
 Install docker on your local and run below command to build the docker image and push to ACR. 
 ```
 $ az login 
@@ -71,7 +71,7 @@ $ docker push "<azure-resource-name-of-your-container-registry>.azurecr.io/<your
 
 ```
 
-##Run Test Cases
+## Run Test Cases
 ```
 $pytest
 ```
